@@ -72,11 +72,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 child:
                     (SvgPicture.asset("lib/assets/images/login/img_logo.svg"))),
           ]),
-          TextField(
-            decoration: InputDecoration(hintText: 'Masukkan Email Anda'),
-          ),
-          TextField(
-            decoration: InputDecoration(hintText: 'Masukkan Password Anda'),
+          Padding(
+            padding: const EdgeInsets.only(left: 50, right: 50),
+            child: Column(children: <Widget>[
+              TextField(
+                decoration: InputDecoration(hintText: 'Masukkan Email Anda'),
+              ),
+              TextField(
+                decoration: InputDecoration(hintText: 'Masukkan Password Anda'),
+              )
+            ]),
           )
         ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
