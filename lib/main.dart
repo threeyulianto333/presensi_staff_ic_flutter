@@ -63,16 +63,23 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Stack(children: <Widget>[
-              SvgPicture.asset("lib/assets/images/login/bg_wave1_biru.svg"),
-              SvgPicture.asset("lib/assets/images/login/img_logo.svg"),
+              Container(
+                  alignment: Alignment.topCenter,
+                  width: 1000,
+                  height: 1000,
+                  child: SvgPicture.asset(
+                      "lib/assets/images/login/bg_wave1_biru.svg")),
+              Container(
+                  alignment: Alignment.center,
+                  width: 600,
+                  height: 400,
+                  child:
+                      SvgPicture.asset("lib/assets/images/login/img_logo.svg")),
             ]),
             TextField(
               decoration: InputDecoration(hintText: 'Masukkan Email Anda'),
