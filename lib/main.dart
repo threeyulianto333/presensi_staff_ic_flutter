@@ -63,32 +63,22 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Stack(children: <Widget>[
-              Container(
-                  alignment: Alignment.topCenter,
-                  width: 1000,
-                  height: 1000,
-                  child: SvgPicture.asset(
-                      "lib/assets/images/login/bg_wave1_biru.svg")),
-              Container(
-                  alignment: Alignment.center,
-                  width: 600,
-                  height: 400,
-                  child:
-                      SvgPicture.asset("lib/assets/images/login/img_logo.svg")),
-            ]),
-            TextField(
-              decoration: InputDecoration(hintText: 'Masukkan Email Anda'),
-            ),
-            TextField(
-              decoration: InputDecoration(hintText: 'Masukkan Password Anda'),
-            )
-          ],
-        ),
+      body: Column(
+        children: <Widget>[
+          Stack(children: <Widget>[
+            SvgPicture.asset("lib/assets/images/login/bg_wave1_biru.svg"),
+            Padding(
+                padding: const EdgeInsets.all(100),
+                child:
+                    (SvgPicture.asset("lib/assets/images/login/img_logo.svg"))),
+          ]),
+          TextField(
+            decoration: InputDecoration(hintText: 'Masukkan Email Anda'),
+          ),
+          TextField(
+            decoration: InputDecoration(hintText: 'Masukkan Password Anda'),
+          )
+        ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
