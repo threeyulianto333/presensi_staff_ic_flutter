@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:presensi_ic_staff/UI/Dashboard/dashboard.dart';
 import 'UI/Login/login.dart';
 
 void main() {
@@ -63,6 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: loginSection);
+    return Scaffold(body: dashboardPage);
   }
 }

@@ -5,7 +5,7 @@ import 'package:presensi_ic_staff/UI/Element/imgVector.dart';
 import 'package:presensi_ic_staff/UI/Element/inputText.dart';
 import 'package:presensi_ic_staff/UI/Element/textView.dart';
 
-Widget loginSection = Container(
+Widget loginPage = Container(
   child: SingleChildScrollView(
     child: Column(
       children: <Widget>[

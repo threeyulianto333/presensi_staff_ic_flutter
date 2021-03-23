@@ -49,8 +49,7 @@ flutter:
         - asset: lib/assets/font/nunito/Nunito-Regular.ttf
         - asset: lib/assets/font/nunito/Nunito-Bold.ttf
   assets:
-    - lib/assets/images/login/bg_wave1_biru.svg
-    - lib/assets/images/login/img_logo.svg
+    - lib/assets/images/login/
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:

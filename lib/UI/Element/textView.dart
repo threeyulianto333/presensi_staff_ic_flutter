@@ -20,3 +20,10 @@ Widget txtStaff = Container(
     style: TextStyle(fontFamily: 'Nunito', fontSize: 25, color: Colors.white),
   ),
 );
+
+Widget txtHi = Container(
+  child: Text(
+    "Hi, selamat datang Tri !",
+    style: TextStyle(fontFamily: 'Nunito', fontSize: 25, color: Colors.white),
+  ),
+);
