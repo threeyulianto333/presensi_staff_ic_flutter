@@ -19,3 +19,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Update 
 + Implement widgeting
+
+### Add
++ Login Page
++ Dashboard Page [Proses]

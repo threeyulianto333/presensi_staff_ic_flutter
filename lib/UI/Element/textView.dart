@@ -27,3 +27,22 @@ Widget txtHi = Container(
     style: TextStyle(fontFamily: 'Nunito', fontSize: 25, color: Colors.white),
   ),
 );
+
+Widget txtTanggal = Container(
+  child: Text(
+    "21-01-2021",
+    style: TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black),
+  ),
+);
+
+Widget txtJM = Container(
+  child: Text("08.00",
+      style:
+          TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black)),
+);
+
+Widget txtJK = Container(
+  child: Text("16.00",
+      style:
+      TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black)),
+);
