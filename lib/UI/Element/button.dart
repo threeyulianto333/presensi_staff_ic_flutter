@@ -5,6 +5,7 @@ import 'package:presensi_ic_staff/UI/Dashboard/dashboard.dart';
 import 'package:presensi_ic_staff/UI/Element/imgVector.dart';
 import 'package:presensi_ic_staff/UI/Element/pack.dart';
 import 'package:presensi_ic_staff/UI/Element/textView.dart';
+import 'package:presensi_ic_staff/UI/Login/login.dart';
 
 Widget btnLogin = Container(
   child: Container(
@@ -71,3 +72,30 @@ Widget btnAkun = Container(
   ),
 );
 
+class BtnAkun1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(
+        child: GestureDetector(
+          child: Column(
+            children: <Widget>[
+              Stack(
+                children: <Widget>[
+                  Positioned.fill(child: imgKotakTgl),
+                  Container(margin: const EdgeInsets.all(0), child: imgAkun)
+                ],
+              ),
+              Container(
+                  margin: const EdgeInsets.only(top: 10), child: txtAkunBtn)
+            ],
+          ),
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => LoginPage()));
+          },
+        ),
+      ),
+    );
+  }
+}

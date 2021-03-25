@@ -81,7 +81,7 @@ Widget rangBtnDash = Container(
     children: [
       Container(margin: const EdgeInsets.only(right: 20), child: btnScan),
       Container(margin: const EdgeInsets.only(right: 20), child: btnRiwayat),
-      btnAkun
+      BtnAkun1()
     ],
   ),
 );

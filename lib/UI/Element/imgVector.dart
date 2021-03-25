@@ -60,14 +60,20 @@ Widget imgScan = Container(
   child: SvgPicture.asset("lib/assets/images/login/ico_scan.svg"),
 );
 
-Widget imgScan2 = Container(
+Widget imgScan2 = Material(
+  elevation: 3,
+  borderRadius: BorderRadius.all(Radius.circular(16)),
   child: SvgPicture.asset("lib/assets/images/login/btn_presensi.svg"),
 );
 
-Widget imgAkun = Container(
+Widget imgAkun = Material(
+  elevation: 3,
+  borderRadius: BorderRadius.all(Radius.circular(16)),
   child: SvgPicture.asset("lib/assets/images/login/btn_akun.svg"),
 );
 
-Widget imgRiwayat = Container(
+Widget imgRiwayat = Material(
+  elevation: 3,
+  borderRadius: BorderRadius.all(Radius.circular(16)),
   child: SvgPicture.asset("lib/assets/images/login/btn_riwayat.svg"),
 );
