@@ -77,3 +77,7 @@ Widget imgRiwayat = Material(
   borderRadius: BorderRadius.all(Radius.circular(16)),
   child: SvgPicture.asset("lib/assets/images/login/btn_riwayat.svg"),
 );
+
+Widget imgLupaPass = Container(
+    child:
+    Image(image: AssetImage('lib/assets/images/login/img_lupa_pass.png')));

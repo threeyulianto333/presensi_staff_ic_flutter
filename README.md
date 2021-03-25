@@ -6,6 +6,7 @@ Presensi untuk Staff Indonesia College
 
 ### Update
 + [UI][Route] Login -> Dashboard  ✔
++ [UI][ROute] Lupa Pass ✔
 
 ## Update 2403 2021
 

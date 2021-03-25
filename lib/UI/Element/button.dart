@@ -91,9 +91,32 @@ class BtnAkun1 extends StatelessWidget {
             ],
           ),
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => LoginPage()));
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => LoginPage()));
           },
+        ),
+      ),
+    );
+  }
+}
+
+class BtnLupaPass extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => LoginPage()));
+      },
+      child: Text("Reset Password", style: TextStyle(fontSize: 20)),
+      style: ButtonStyle(
+        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(15)),
+        foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+        backgroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(5.0),
+          ),
         ),
       ),
     );

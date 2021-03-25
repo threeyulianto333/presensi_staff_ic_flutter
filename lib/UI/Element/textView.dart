@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:presensi_ic_staff/UI/Login/lupaPass.dart';
 
 Widget txtLupaPass = Container(
     child: Container(
-        padding: const EdgeInsets.only(bottom: 100),
-        child: Text("Lupa akun ?")));
+        padding: const EdgeInsets.all(10), child: Text("Lupa akun ?")));
 
 Widget txtPresensi = Container(
   child: Text(
@@ -26,7 +26,7 @@ Widget txtRiwayatBtn = Container(
   child: Text(
     "Riwayat",
     style:
-    TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.blueAccent),
+        TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.blueAccent),
   ),
 );
 
@@ -34,7 +34,7 @@ Widget txtAkunBtn = Container(
   child: Text(
     "Akun",
     style:
-    TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.blueAccent),
+        TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.blueAccent),
   ),
 );
 
@@ -79,6 +79,36 @@ Widget txtJM = Container(
 
 Widget txtJK = Container(
   child: Text("16.00",
+      style:
+          TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black)),
+);
+
+Widget tvLupaPassAppBar = Text(
+  "Lupa Password",
+  style: TextStyle(
+    color: Colors.black,
+  ),
+);
+
+class TvLupaPass extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.only(bottom: 100),
+      child: InkWell(
+        child: Text("Lupa akun ?"),
+        onTap: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => LupaPassPage()));
+        },
+      ),
+    );
+  }
+}
+
+Widget txtInsResetPass = Container(
+  child: Text(
+      "Masukkan email, tekan Reset Password, Kemudian ikuti instruksi di Email.",
       style:
           TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black)),
 );

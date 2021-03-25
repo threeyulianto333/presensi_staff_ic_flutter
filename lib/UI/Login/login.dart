@@ -5,6 +5,7 @@ import 'package:presensi_ic_staff/UI/Element//button.dart';
 import 'package:presensi_ic_staff/UI/Element/imgVector.dart';
 import 'package:presensi_ic_staff/UI/Element/inputText.dart';
 import 'package:presensi_ic_staff/UI/Element/textView.dart';
+import 'package:presensi_ic_staff/UI/Login/lupaPass.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key, this.btnLogin}) : super(key: key);
@@ -66,7 +67,7 @@ class _LoginPage extends State<LoginPage> {
                   SizedBox(
                     width: double.infinity,
                     child: Container(
-                      margin: const EdgeInsets.only(top: 10, bottom: 10),
+                      margin: const EdgeInsets.only(top: 30, bottom: 10),
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.push(
@@ -93,7 +94,18 @@ class _LoginPage extends State<LoginPage> {
                       ),
                     ),
                   ),
-                  txtLupaPass
+                  SizedBox(
+                    width: double.infinity,
+                    child: InkWell(
+                      child: Center(child: txtLupaPass),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LupaPassPage()));
+                      },
+                    ),
+                  )
                 ]),
               )
             ],
