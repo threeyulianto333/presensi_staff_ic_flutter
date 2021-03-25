@@ -65,17 +65,32 @@ class _LoginPage extends State<LoginPage> {
                   inputPass,
                   SizedBox(
                     width: double.infinity,
-                    child: GestureDetector(
-                      onTap: () {
-                        final snackBar = SnackBar(content: Text("Tap"));
-
-                        ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => DashboardPage()));
-                      },
-                      child: btnLogin,
+                    child: Container(
+                      margin: const EdgeInsets.only(top: 10, bottom: 10),
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => DashboardPage()));
+                        },
+                        child: Text("Login".toUpperCase(),
+                            style: TextStyle(fontSize: 20)),
+                        style: ButtonStyle(
+                          padding: MaterialStateProperty.all<EdgeInsets>(
+                              EdgeInsets.all(15)),
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.green),
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5.0),
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   txtLupaPass
