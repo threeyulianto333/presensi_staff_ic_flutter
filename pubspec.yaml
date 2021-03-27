@@ -24,6 +24,7 @@ dependencies:
   flutter_svg: ^0.19.3
   flutter:
     sdk: flutter
+  qr_mobile_vision: '^0.0.7'
 
 
   # The following adds the Cupertino Icons font to your application.

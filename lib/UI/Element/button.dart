@@ -122,3 +122,23 @@ class BtnLupaPass extends StatelessWidget {
     );
   }
 }
+
+class BtnScan extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        children: <Widget>[
+          Stack(
+            children: <Widget>[
+              Positioned.fill(child: imgKotakTgl),
+              Container(margin: const EdgeInsets.all(0), child: imgScan2)
+            ],
+          ),
+          Container(
+              margin: const EdgeInsets.only(top: 10), child: txtPresensiBtn)
+        ],
+      ),
+    );
+  }
+}
