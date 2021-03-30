@@ -97,6 +97,13 @@ Widget tvRiwayatAppBar = Text(
   ),
 );
 
+Widget tvDRiwayatAppBar = Text(
+  "Detail Riwayat",
+  style: TextStyle(
+    color: Colors.black,
+  ),
+);
+
 class TvLupaPass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

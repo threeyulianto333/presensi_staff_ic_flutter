@@ -316,26 +316,16 @@ class _BtnFilter extends State<BtnFilter> {
           padding: const EdgeInsets.all(5.0),
           child: Row(
             children: [
-              Container(margin: const EdgeInsets.only(right: 10),height: 20, width: 20, child: imgFilter),
+              Container(
+                  margin: const EdgeInsets.only(right: 10),
+                  height: 20,
+                  width: 20,
+                  child: imgFilter),
               tvFilter,
             ],
           ),
         ),
-        onPressed: () {
-          final snackBar = SnackBar(
-            content: Text('Yay! A SnackBar!'),
-            action: SnackBarAction(
-              label: 'Undo',
-              onPressed: () {
-                // Some code to undo the change.
-              },
-            ),
-          );
-
-          // Find the ScaffoldMessenger in the widget tree
-          // and use it to show a SnackBar.
-          ScaffoldMessenger.of(context).showSnackBar(snackBar);
-        },
+        onPressed: () {},
       ),
     );
   }

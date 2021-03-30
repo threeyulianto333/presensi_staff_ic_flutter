@@ -8,7 +8,8 @@ Widget imgBgWave1 = Container(
         width: double.infinity,
         child: SvgPicture.asset("lib/assets/images/login/bg_wave1_biru.svg")));
 
-Widget imgIconLogo = Container(child: SvgPicture.asset("lib/assets/images/login/img_logo.svg"));
+Widget imgIconLogo =
+    Container(child: SvgPicture.asset("lib/assets/images/login/img_logo.svg"));
 
 Widget imgBgWave2 = Container(
     child: SizedBox(
@@ -54,6 +55,9 @@ Widget imgKotakTgl = Container(
     ],
   ),
 );
+
+Widget imgKotakBiru = Expanded(
+    child: SvgPicture.asset('lib/assets/images/login/img_kotak_biru.svg'));
 
 Widget imgScan = Container(
   child: SvgPicture.asset("lib/assets/images/login/ico_scan.svg"),

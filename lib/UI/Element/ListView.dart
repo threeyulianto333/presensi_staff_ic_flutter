@@ -8,7 +8,7 @@ Widget lvRiwayat = Container(
     scrollDirection: Axis.vertical,
     shrinkWrap: true,
     itemBuilder: (context, position) {
-      return cvRiwayat;
+      return CvRiwayat();
     },
     itemCount: 'Testing'.length,
   ),

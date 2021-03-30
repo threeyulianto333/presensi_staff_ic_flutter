@@ -126,8 +126,8 @@ Widget barAtasRiwayat = Container(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Container(alignment: Alignment.topLeft, child: BtnPoin()),
-        Container(alignment: Alignment.topRight, child: BtnFilter()),
+        BtnPoin(),
+        BtnFilter(),
       ],
     ),
   ),
