@@ -2,6 +2,11 @@
 
 Presensi untuk Staff Indonesia College
 
+## Update 3103 2021
+
+### Add
++ Detail Riwayat page
+
 ## Update 3003 2021
 
 ### Add

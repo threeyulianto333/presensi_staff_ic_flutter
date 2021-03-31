@@ -43,6 +43,7 @@ class _DetailRiwayatPage extends State<DetailRiwayatPage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Stack(
+
                 alignment: Alignment.topCenter,
                 children: <Widget>[
                   Container(
@@ -53,6 +54,7 @@ class _DetailRiwayatPage extends State<DetailRiwayatPage> {
                 ],
               ),
                Expanded(
+                 flex: 1,
                 child: imgKotakBiru,
               )
             ],
