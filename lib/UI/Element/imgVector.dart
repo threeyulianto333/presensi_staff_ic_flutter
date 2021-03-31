@@ -88,3 +88,5 @@ Widget imgLupaPass = Container(
 Widget imgFilter = Container(
   child: SvgPicture.asset("lib/assets/images/login/ico_filter.svg"),
 );
+
+Widget imgSeparator = SvgPicture.asset("lib/assets/images/login/img_separator.svg");

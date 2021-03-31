@@ -5,6 +5,7 @@ import 'package:presensi_ic_staff/UI/Element/button.dart';
 import 'package:presensi_ic_staff/UI/Element/imgVector.dart';
 import 'package:presensi_ic_staff/UI/Element/pack.dart';
 import 'package:presensi_ic_staff/UI/Element/textView.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class DetailRiwayatPage extends StatefulWidget {
   DetailRiwayatPage({Key key, this.title}) : super(key: key);
@@ -43,7 +44,6 @@ class _DetailRiwayatPage extends State<DetailRiwayatPage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Stack(
-
                 alignment: Alignment.topCenter,
                 children: <Widget>[
                   Container(
@@ -51,11 +51,48 @@ class _DetailRiwayatPage extends State<DetailRiwayatPage> {
                   Container(
                       margin: const EdgeInsets.only(left: 20, right: 20),
                       child: kotakTglPoin),
+                  Container(
+                      margin:
+                          const EdgeInsets.only(top: 100, left: 30, right: 30),
+                      child: Column(
+                        children: [
+                          imgSeparator,
+                          Container(
+                            margin: const EdgeInsets.only(top: 10, bottom: 10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [tvKeterlambatan, tvKeterlambatan],
+                            ),
+                          ),
+                        ],
+                      )),
+                  Container(
+                      margin:
+                          const EdgeInsets.only(top: 150, left: 30, right: 30),
+                      child: Column(
+                        children: [
+                          imgSeparator,
+                          Container(
+                            margin: const EdgeInsets.only(top: 10, bottom: 10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [tvPoinDidapat, tvPoinDidapat],
+                            ),
+                          ),
+                        ],
+                      )),
                 ],
               ),
-               Expanded(
-                 flex: 1,
-                child: imgKotakBiru,
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    color: HexColor('#E8F4FE'),
+                  ),
+                ),
+                // child: imgKotakBiru),
               )
             ],
           ),

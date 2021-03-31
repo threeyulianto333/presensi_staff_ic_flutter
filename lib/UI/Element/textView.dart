@@ -143,3 +143,13 @@ Widget tvTanggal = Text(
   "26-1-2021",
   style: TextStyle(fontFamily: "Nunito", fontSize: 30, color: Colors.black),
 );
+
+Widget tvKeterlambatan = Text(
+  'Keterlambatan',
+  style: TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black),
+);
+
+Widget tvPoinDidapat = Text(
+  'Poin Didapat',
+  style: TextStyle(fontFamily: 'Nunito', fontSize: 20, color: Colors.black),
+);
